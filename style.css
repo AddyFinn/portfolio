@@ -90,6 +90,37 @@ h2 {
     max-width: 520px;
 }
 
+.tools {
+    margin-top: 14px;
+    font-size: 14.5px;
+    color: rgba(207, 207, 230, 0.85);
+}
+
+.github-link {
+    margin-top: 10px;
+}
+
+.github-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14.5px;
+    color: rgba(207, 207, 230, 0.85);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.25s ease;
+}
+
+.github-link i {
+    font-size: 18px;
+    color: var(--accent);
+}
+
+.github-link a:hover {
+    color: var(--accent);
+}
+
+
 /* Work Grid */
 .work-grid {
     display: grid;
