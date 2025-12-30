@@ -1,147 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Addy Finn</title>
+.resume-btn {
+    margin-left: 16px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(123, 63, 228, 0.6);
+    background: transparent;
+    color: rgba(207, 207, 230, 0.85);
+    font-size: 14.5px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: 
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease;
+}
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="icon.png">
+.resume-btn:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    color: var(--accent);
+}
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-
-<header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<main>
-
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="about-container">
-            <div class="about-avatar">
-                <img src="avatar.png" alt="Avatar">
-            </div>
-
-            <div class="about-text">
-                <h2>Adnan Gulzar Baba</h2>
-                <p>
-                    Hi, I’m <strong>Addy</strong> — a <strong>Data Science & AI</strong> master's student focused on
-                    turning complex data into clean, usable insights.
-                    <br><br>
-                    I’m open to full-time or project-based remote roles where I can contribute to practical,
-                    data-driven solutions.
-                </p>
-
-                <p class="tools">
-                    <strong>Tools:</strong>
-                    Python · SQL · Excel · Power BI · Jupyter Notebook · Pandas · NumPy ·
-                    Scikit-learn · Matplotlib · Seaborn · Streamlit · FastAPI
-                </p>
-
-                <div class="github-link">
-                    <a href="https://github.com/adnangulzarbaba" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WORK -->
-    <section id="work">
-        <h2>My Work</h2>
-
-        <div class="work-grid">
-
-            <!-- Flipkart Project -->
-            <div class="card">
-                <h3>Real Time PowerBI Flipkart Project</h3>
-
-                <p>
-                    A real-time data analytics project that extracts product data from Flipkart using web scraping,
-                    processes and analyzes the data in Excel, and visualizes key insights through an interactive
-                    Power BI dashboard. The project focuses on tracking pricing trends, ratings, and product
-                    availability to support data-driven decision making.
-                </p>
-
-                <p><strong>Tools:</strong> Python · Web Scraping · Excel · Power BI</p>
-            </div>
-
-            <!-- FindBuyer -->
-            <div class="card">
-                <h3>FindBuyer – Automation Tool for Supplier–Buyer Matching</h3>
-
-                <p>
-                    FindBuyer is an AI-driven automation tool that helps suppliers identify potential buyers based on
-                    product details and market preferences. It uses intelligent matching to generate relevant buyer
-                    leads and support data-driven decision making.
-                </p>
-
-                <p><strong>Tools:</strong> Python · FastAPI · Web Scraping · Email Automation · SQL</p>
-            </div>
-
-            <!-- Convo-Bot -->
-            <div class="card">
-                <h3>Convo-Bot: Voice-Enabled AI Chatbot</h3>
-
-                <p>
-                    Convo-Bot is a voice-enabled AI chatbot that enables natural human-computer interaction through
-                    speech. It uses speech recognition, NLP, and text-to-speech to understand user intent and respond
-                    in real time.
-                </p>
-
-                <p><strong>Tools:</strong> Python · NLP · Speech Recognition · Text-to-Speech · Streamlit</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- BLOG -->
-    <section id="blog">
-        <h2>Blog</h2>
-        <div class="card">
-            <h3>Thoughts & Notes</h3>
-            <p>Coming Soon.</p>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <a href="https://www.linkedin.com/in/adnangulzarbaba" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://www.instagram.com/addyfinn" target="_blank">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="mailto:adnangulzarbaba@gmail.com">
-                <i class="fas fa-envelope"></i> adnangulzarbaba@gmail.com
-            </a>
-        </div>
-    </section>
-
-</main>
-
-<footer>
-    © 2025 Addy Finn. All Rights Reserved.
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
-
+.resume-btn i {
+    font-size: 16px;
+    color: var(--accent);
+}
