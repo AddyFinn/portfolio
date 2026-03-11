@@ -1,150 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Addy Finn</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Addy Finn — Data Science & AI</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="icon.png" sizes="48x48" type="image/png">
+  <link rel="icon" href="icon.png" sizes="48x48" type="image/png">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Addy Finn – Data Science & AI">
-    <meta property="og:description" content="Portfolio of Adnan Gulzar Baba – Data Science & AI Specialist">
-    <meta property="og:image" content="avatar.png">
-    <meta property="og:type" content="website">
+  <meta property="og:title" content="Addy Finn – Data Science & AI">
+  <meta property="og:description" content="Portfolio of Adnan Gulzar Baba – Data Science & AI Specialist">
+  <meta property="og:image" content="avatar.png">
+  <meta property="og:type" content="website">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
+<!-- Cursor -->
+<div class="cursor cursor-dot"></div>
+<div class="cursor cursor-ring"></div>
+
+<!-- Ambient glow -->
+<div class="ambient ambient-1"></div>
+<div class="ambient ambient-2"></div>
+
+<!-- NAV -->
 <header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <nav>
+    <a href="#about" class="nav-logo">ADDY<span>.</span>FINN</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 </header>
 
 <main>
 
-<!-- ABOUT / HERO -->
-<section id="about">
+  <!-- ─── HERO ─── -->
+  <section id="about">
     <div class="about-container">
 
-        <div class="about-avatar">
-            <img src="avatar.png" alt="Avatar">
+      <div class="about-text">
+        <p class="hero-eyebrow">Available for remote roles</p>
+
+        <h1 class="hero-name">
+          Adnan<br>
+          <span class="highlight">Gulzar Baba</span>
+        </h1>
+
+        <p class="hero-title">// Data Science & AI Engineer</p>
+
+        <p class="hero-desc">
+          Hi, I'm <strong>Addy</strong> — a data-driven problem solver focused on building
+          intelligent systems and turning complex data into meaningful insights.
+        </p>
+
+        <div class="tools-wrap">
+          <p class="tools-label">Stack</p>
+          <div class="tools-list">
+            <span class="tool-chip">Python</span>
+            <span class="tool-chip">SQL</span>
+            <span class="tool-chip">Pandas</span>
+            <span class="tool-chip">NumPy</span>
+            <span class="tool-chip">Scikit-learn</span>
+            <span class="tool-chip">Power BI</span>
+            <span class="tool-chip">Streamlit</span>
+            <span class="tool-chip">FastAPI</span>
+            <span class="tool-chip">Matplotlib</span>
+            <span class="tool-chip">Seaborn</span>
+            <span class="tool-chip">Excel</span>
+          </div>
         </div>
 
-        <div class="about-text">
-            <h1 class="hero-name">Adnan Gulzar Baba</h1>
-            <h3 class="hero-title">Data Science & AI Engineer</h3>
-
-            <p class="hero-desc">
-                Hi, I’m <strong>Addy</strong> — a data-driven problem solver focused on
-                building intelligent systems and turning complex data into meaningful insights.
-                <br><br>
-                Open to full-time or project-based <strong>remote roles</strong>.
-            </p>
-
-            <p class="tools">
-                <strong>Tools:</strong>
-                Python · SQL · Excel · Power BI · Pandas · NumPy ·
-                Scikit-learn · Matplotlib · Seaborn · Streamlit · FastAPI
-            </p>
-
-            <div class="github-link">
-                <a href="https://github.com/adnangulzarbaba" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-
-                <a href="addy-resume.pdf" download class="resume-btn">
-                    <i class="fas fa-file-download"></i> Download Resume
-                </a>
-            </div>
+        <div class="cta-row">
+          <a href="https://github.com/adnangulzarbaba" target="_blank" class="btn btn-ghost">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="addy-resume.pdf" download class="btn btn-primary">
+            <i class="fas fa-file-download"></i> Download Resume
+          </a>
         </div>
+      </div>
+
+      <div class="about-avatar">
+        <div class="avatar-frame">
+          <img src="avatar.png" alt="Addy Finn avatar">
+          <div class="avatar-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Open to work</span>
+          </div>
+        </div>
+      </div>
 
     </div>
-</section>
+  </section>
 
-<!-- WORK -->
-<section id="work">
-    <h2>My Work</h2>
+  <div class="divider"></div>
+
+  <!-- ─── WORK ─── -->
+  <section id="work">
+    <p class="section-label reveal">// Selected Projects</p>
+    <h2 class="reveal">My Work</h2>
 
     <div class="work-grid">
 
-        <div class="card">
-            <h3>Real-Time Ecommerce Book Store Power BI Analytics</h3>
-            <p>
-                Extracted live product data using web scraping, analyzed trends in Excel,
-                and visualized insights through an interactive Power BI dashboard.
-            </p>
-            <p><strong>Tools:</strong> Python · Web Scraping · Excel · Power BI</p>
+      <div class="card reveal">
+        <div class="card-icon">📊</div>
+        <h3>Real-Time Ecommerce Book-Store Power BI Analytics</h3>
+        <p>Extracted live product data using web scraping, analyzed trends in Excel, and visualized insights through an interactive Power BI dashboard.</p>
+        <div class="card-tools">
+          <span class="card-tag">Python</span>
+          <span class="card-tag">Web Scraping</span>
+          <span class="card-tag">Excel</span>
+          <span class="card-tag">Power BI</span>
         </div>
+      </div>
 
-        <div class="card">
-            <h3>FindBuyer – Supplier–Buyer Matching Tool</h3>
-            <p>
-                AI-powered automation tool that identifies potential buyers using
-                intelligent matching and automated outreach.
-            </p>
-            <p><strong>Tools:</strong> Python · FastAPI · SQL · Web Scraping · Email Automation</p>
+      <div class="card reveal">
+        <div class="card-icon">🤖</div>
+        <h3>FindBuyer — Supplier–Buyer Matching Tool</h3>
+        <p>AI-powered automation tool that identifies potential buyers using intelligent matching and automated outreach.</p>
+        <div class="card-tools">
+          <span class="card-tag">Python</span>
+          <span class="card-tag">FastAPI</span>
+          <span class="card-tag">SQL</span>
+          <span class="card-tag">Email Automation</span>
         </div>
+      </div>
 
-        <div class="card">
-            <h3>Convo-Bot – Voice Enabled AI Chatbot</h3>
-            <p>
-                Voice-based chatbot using NLP, speech recognition,
-                and real-time text-to-speech responses.
-            </p>
-            <p><strong>Tools:</strong> Python · NLP · Speech Recognition · Streamlit</p>
+      <div class="card reveal">
+        <div class="card-icon">🎙️</div>
+        <h3>Convo-Bot — Voice Enabled AI Chatbot</h3>
+        <p>Voice-based chatbot using NLP, speech recognition, and real-time text-to-speech responses.</p>
+        <div class="card-tools">
+          <span class="card-tag">Python</span>
+          <span class="card-tag">NLP</span>
+          <span class="card-tag">Speech Recognition</span>
+          <span class="card-tag">Streamlit</span>
         </div>
+      </div>
 
     </div>
-</section>
+  </section>
 
-<!-- BLOG -->
-<section id="blog">
-    <h2>Blog</h2>
-    <div class="card">
-        <h3>Thoughts & Notes</h3>
-        <p>Coming soon.</p>
+  <div class="divider"></div>
+
+  <!-- ─── BLOG ─── -->
+  <section id="blog">
+    <p class="section-label reveal">// Writing</p>
+    <h2 class="reveal">Blog</h2>
+
+    <div class="blog-placeholder reveal">
+      <span class="coming-soon">COMING SOON</span>
+      <p>Thoughts on data science, AI engineering, and building intelligent systems.</p>
     </div>
-</section>
+  </section>
 
-<!-- CONTACT -->
-<section id="contact">
-    <h2>Contact</h2>
+  <div class="divider"></div>
 
-    <div class="contact-info">
-        <a href="https://www.linkedin.com/in/adnangulzarbaba" target="_blank">
-            <i class="fab fa-linkedin"></i> LinkedIn
+  <!-- ─── CONTACT ─── -->
+  <section id="contact">
+    <p class="section-label reveal">// Let's connect</p>
+    <h2 class="reveal">Contact</h2>
+
+    <div class="contact-grid">
+      <div>
+        <p class="contact-intro reveal">
+          I'm open to full-time or project-based <strong>remote roles</strong> in data science
+          and AI. If you have an interesting problem to solve, let's talk.
+        </p>
+      </div>
+
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/adnangulzarbaba" target="_blank" class="contact-link reveal">
+          <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+          <div class="contact-info-text">
+            <strong>LinkedIn</strong>
+            <span>adnangulzarbaba</span>
+          </div>
+          <span class="contact-arrow"><i class="fas fa-arrow-right"></i></span>
         </a>
 
-        <a href="https://www.instagram.com/addy.nomad" target="_blank">
-            <i class="fab fa-instagram"></i> Instagram
+        <a href="mailto:adnangulzarbaba@gmail.com" class="contact-link reveal">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-info-text">
+            <strong>Email</strong>
+            <span>adnangulzarbaba@gmail.com</span>
+          </div>
+          <span class="contact-arrow"><i class="fas fa-arrow-right"></i></span>
         </a>
 
-        <a href="mailto:adnangulzarbaba@gmail.com">
-            <i class="fas fa-envelope"></i> adnangulzarbaba@gmail.com
+        <a href="https://github.com/adnangulzarbaba" target="_blank" class="contact-link reveal">
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
+          <div class="contact-info-text">
+            <strong>GitHub</strong>
+            <span>adnangulzarbaba</span>
+          </div>
+          <span class="contact-arrow"><i class="fas fa-arrow-right"></i></span>
         </a>
+      </div>
     </div>
-</section>
+  </section>
 
 </main>
 
 <footer>
-    © 2026 Addy Finn. All Rights Reserved.
+  <span class="footer-name">ADDY<span style="color:var(--purple-l)">.</span>FINN</span>
+  <span class="footer-copy">© 2026 · All Rights Reserved</span>
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-
